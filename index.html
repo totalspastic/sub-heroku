@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
   <body>
+    <script>
+      var a,b,c;
+      function subtract()
+      {
+        a=Number(document.getElementById("a").value);
+        b=Number(document.getElementById("b").value);
+        c=a-b;
+        document.getElementById("c").value=c;
+      }
+    </script>
+        
     Enter first number:<input type ="text" id="a">
     Enter second number:<input type ="text" id="b">
     Result:<input type="text" id="c" readonly>
-    <input type="submit" value="SUBTRACT">
+    <input type="submit" value="SUBTRACT" onclick="subtract()">
   </body>
 </html>
   
